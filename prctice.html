@@ -1,15 +1,34 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
+	<title>Alternate Color Squares</title>
+	<style>
+		.square {
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin-right: 10px;
+			background-color: red;
+			transition: background-color 0.5s;
+		}
 
+		.square:nth-child(even) {
+			background-color: blue;
+		}
+
+		.square:hover {
+			background-color: blue !important;
+		}
+
+		.square:hover:nth-child(even) {
+			background-color: red !important;
+		}
+	</style>
 </head>
 <body>
-<h1>
-SWIGGY
-</h1>
-<p>
-Swiggy is an Indian online food ordering and delivery platform. Founded in 2014, Swiggy is based in Bangalore and operates in 500 Indian cities as of September 2021.
-</p>
-<img src="https://www.myhoardings.com/blog/wp-content/uploads/2021/07/Best-Ways-To-Negotiate-Terms-With-Swiggy-1024x290-1.png" height="200" width="200" alt="swiggy image">
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
 </body>
 </html>
